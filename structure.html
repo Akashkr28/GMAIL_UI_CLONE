@@ -7,8 +7,41 @@
     <link rel="stylesheet" href="./src/output.css">
 </head>
 <body>
-    <main>
-        <div class="flex h-screen">
+    <main class="flex grid-flow-col bg-slate-200 h-full w-full">
+        <div class="flex-1 h-screen max-h-screen flex flex-col">
+            <header class="w-full flex flex-row items-center pr-4" >
+                <div class="w-[48%] h-12 px-4 border-0 rounded-xl bg-blue-100/50 my-2 flex items-center  justify-center space-x-4">
+                    <img
+                    src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_1x_r5.png"
+                    alt="Gmail Logo"
+                    />
+                    <div>
+                        <svg
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                          class="w-6 h-6 text-gray-700"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M20.49,19l-5.73-5.73C15.53,12.2,16,10.91,16,9.5C16,5.91,13.09,3,9.5,3S3,5.91,3,9.5C3,13.09,5.91,16,9.5,16 c1.41,0,2.7-0.47,3.77-1.24L19,20.49L20.49,19z M5,9.5C5,7.01,7.01,5,9.5,5S14,7.01,14,9.5S11.99,14,9.5,14S5,11.99,5,9.5z"
+                          ></path>
+                          <path d="M0,0h24v24H0V0z" fill="none"></path>
+                        </svg>
+                    </div>
+                    <input
+                    type="text"
+                    disabled="true"
+                    placeholder="Search in mail"
+                    class="flex-1 items-center bg-transparent outline-none placeholder-gray-600"
+                    />
+                </div>
+            </header>
+        </div> 
+
+
+
+        <!-- <div class="flex h-screen">
             <nav class="w-16 h-full bg-[#eaf1fb] flex flex-col items-center space-y-4 py-2">
                 <button class="flex items-center justify-center hover:bg-[#dae1eb] rounded-full w-12 h-12">
 
@@ -20,7 +53,7 @@
                 <button class="w-12 h-8 rounded-full mx-auto bg-center bg-no-repeat"></button>
                 <button class="w-12 h-8 rounded-full mx-auto bg-center bg-no-repeat"></button>
             </nav>
-        </div>
+        </div> -->
     </main>
 </body>
 </html>
