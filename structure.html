@@ -8,9 +8,11 @@
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.1/dist/cdn.min.js"></script>
 </head>
 <body>
-    <main class="bg-slate-100  h-full w-full">
-        <div class="flex-1 h-screen max-h-screen flex flex-col">
-            <header class="w-full flex flex-row items-center pr-4 bg-slate-100" >
+    <main class="bg-[#eaf1fb] h-full w-full">
+
+        <!-- HEADER STARTS -->
+        <div class="flex-1 max-h-screen flex flex-col p-0">
+            <header class="w-full flex flex-row items-center pr-4 bg-[#eaf1fb]" >
                 <div class="flex-1 flex items-center justify-start space-x-4">
                     <div class="flex">
                         <button class="flex items-center justify-center hover:bg-[#dae1eb] rounded-full w-12 h-12 mx-3">
@@ -108,7 +110,6 @@
                                 ></path>
                             </svg>
                         </div>
-
       
                         <img
                           src="https://lh3.googleusercontent.com/ogw/AF2bZyg0grbgfem4vN95pusC6pRBcGzXx5q3Qj1o7MTHcFJ3tCU=s32-c-mo"
@@ -119,13 +120,49 @@
                 </div>
             </header>
         </div> 
+        <!-- HEADER ENDS -->
 
-        <div class=" h-fit">
-            <nav class="w-16 max-h-fit bg-black space-y-4 py-2">
+        <!-- NAVBAR STARTS -->
+        <div class="h-screen flex p-2">
+            <nav class="w-16 h-full bg-[#eaf1fb] ">
+                <button>
+                    <div class="w-12 h-8 rounded-full bg-blue-200/50 mx-auto bg-center bg-no-repeat" style="background-image: url('https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/mail_fill_baseline_p900_20dp.png');"></div>
+                    <p class="text-xs">Mail</p>
+                </button>
+                <button>
+                    <div
+                    class="w-12 h-8 rounded-full mx-auto bg-center bg-no-repeat"
+                    style="
+                        background-image: url('https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/chat_bubble_baseline_nv700_20dp.png');
+                    "
+                    ></div>
+                    <p class="text-xs">Chat</p>
+                </button>
+
+                <button>
+                    <div
+                    class="w-12 h-8 rounded-full mx-auto bg-center bg-no-repeat"
+                    style="
+                        background-image: url('https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/gmail_groups_baseline_nv700_20dp.png');
+                    "
+                    ></div>
+                    <p class="text-xs">Spaces</p>
+                </button>
+
+                <button>
+                    <div
+                    class="w-12 h-8 rounded-full mx-auto bg-center bg-no-repeat"
+                    style="
+                        background-image: url('https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/meet_baseline_nv700_20dp.png');
+                    "
+                    ></div>
+                    <p class="text-xs">Meet</p>
+                </button>
             </nav>
         </div>
+        <!-- NAVBAR ENDS -->
 
-
+        
 
     </main>
 </body>
